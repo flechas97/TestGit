@@ -3,9 +3,8 @@ package cuentas;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        CCuenta cuenta1;
         //creamos la cuenta
-        cuenta1 = new CCuenta("Antonio Lopez","1000-2365-85-1230456789",2500,0);
+        CCuenta cuenta1 = new CCuenta("Antonio Lopez","1000-2365-85-1230456789",2500,0);
         //imprimimos los datos de la cuenta1
         System.out.println("Datos de la cuenta=\n"+"NOMBRE= "+cuenta1.getNombre()+"\n"
         +"Nº CUENTA= "+cuenta1.getCuenta()+"\n"+"SALDO ACTUAL= "+cuenta1.getSaldo()+"\n");
@@ -24,7 +23,7 @@ public class Main {
             cuenta1.ingresar(695);
             System.out.println("----> Nuevo saldo= "+cuenta1.getSaldo());
         } catch (Exception e) {
-            System.out.print("Fallo al ingresar");
+            System.out.print("Fallo al ingresar");//hola
         }
     }
 }
